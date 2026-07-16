@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>getelemtby id</title>
+    </head>
+    <body>
+        <h1 id="t">Welcome</h1>
+
+        <button onclick="changeText()">
+            avinash
+        </button>
+
+
+        <p id="msg">hi DOM</p>
+      <button onclick="changeColor()">Change Color</button>
+
+
+       <input type="text" id="name">
+
+            <button onclick="showName()">
+                Show
+            </button>
+            </input>
+
+         <script>
+        function changeText() {
+            document.getElementById("t").innerText = "Hello"
+        }
+        function changeColor() {
+            document.getElementById("msg").style.color = "red"
+        }
+
+        function showName() {
+
+                let abc = document.getElementById("name").value;
+
+                alert(abc)}
+        </script> 
+        
+
+
+    </body>
+</html>

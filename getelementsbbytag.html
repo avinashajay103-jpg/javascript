@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByTagName Example</title>
+</head>
+<body>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            let paragraphs = document.getElementsByTagName("p");
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = "blue";
+            }
+        }
+    </script>
+
+</body>
+</html>

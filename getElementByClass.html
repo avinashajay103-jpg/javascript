@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByClassName Example</title>
+</head>
+<body>
+
+    <h2 class="msg">Hello</h2>
+    <h2 class="msg">Welcome</h2>
+    <h2 class="msg">JavaScript</h2>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            let element = document.getElementsByClassName("msg");
+            element[2].innerHTML = "changed!";
+        }
+    </script>
+
+</body>
+
+</html>  
