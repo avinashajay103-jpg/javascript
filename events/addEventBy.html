@@ -1,42 +1,21 @@
-<html>
-    <head>
-        <title>getelemtby id</title>
-    </head>
-    <body>
-        <h1 id="title">Welcome</h1>
+<!-- It is a JavaScript method used to attach an event to an HTML element. -->
 
-        <button onclick="changeText()">
-            Click Me
-        </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addEventListener Example</title>
+</head>
+<body>
 
-        <p id="msg">hi DOM</p>
-      <button onclick="changeColor()">Change Color</button>
+    <button id="btn">Click</button>
 
+    <script>
+        let btn = document.getElementById("btn");
 
-       <input type="text" id="name">
+        btn.addEventListener("click", function () {
+            alert("Button Clicked");
+        });
+    </script>
 
-            <button onclick="showName()">
-                Show
-            </button>
-
-        <script>
-        function changeText() {
-            document.getElementById("title").innerText = "Hello Athulya";
-        }
-        function changeColor() {
-            document.getElementById("msg").style.color = "red";
-        }
-
-        function showName() {
-
-                let name =
-                document.getElementById("name").value;
-
-                alert(name);
-}
-        </script>
-        
-
-
-    </body>
+</body>
 </html>
